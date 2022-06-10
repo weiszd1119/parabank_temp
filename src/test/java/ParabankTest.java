@@ -69,9 +69,8 @@ public class ParabankTest {
         parabankOpenNewAccount.checklink();
         parabankOpenNewAccount.clickdropdownlist();
         parabankOpenNewAccount.clickonopennewaccountbutton();
+        parabankOpenNewAccount.selectfromdropdownlist();
     }
-
-
     @AfterEach
     @Epic("Parabank")
     @Story("Make Screenshot")
