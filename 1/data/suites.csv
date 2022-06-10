@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Fri Jun 10 06:42:10 GMT 2022","Fri Jun 10 06:42:10 GMT 2022","205","","ParabankTest","","ParabankTest","totalAmountInParabank","totalAmountInParabank()","Navigation to the overview page and check total amount"
+"broken","Fri Jun 10 06:42:09 GMT 2022","Fri Jun 10 06:42:10 GMT 2022","792","","ParabankTest","","ParabankTest","loginToParabank","loginToParabank()","Navigation to the login page and login to the site"
+"broken","Fri Jun 10 06:42:10 GMT 2022","Fri Jun 10 06:42:10 GMT 2022","186","","ParabankTest","","ParabankTest","openNewAccountInParabank","openNewAccountInParabank()","Navigation to the overview page and create a new account"
