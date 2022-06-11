@@ -5,6 +5,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ParabankLoginTest extends StartDriver {
     private final String urlLogin = "https://parabank.parasoft.com/parabank/index.htm";
+
+    private final String urlOpenNewAccount = "https://parabank.parasoft.com/parabank/openaccount.htm";
     private final String actualUrlLogin = driver.getCurrentUrl();
     private final String expectedUrlLogin = "https://parabank.parasoft.com/parabank/overview.htm";
     private final String inputLoginUserName = "weiszd1119";
@@ -35,7 +37,13 @@ public class ParabankLoginTest extends StartDriver {
     public void pressloginbutton() {
         driver.findElement(findLoginButton).click();
     }
+
+    public void navigatetoopennewaccount() {
+        driver.navigate().to(urlOpenNewAccount);
+    }
+    /*
     public void checkloginresult() {
         assertEquals(expectedUrlLogin, actualUrlLogin);
     }
+    */
 }

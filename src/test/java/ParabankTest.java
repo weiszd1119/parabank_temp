@@ -42,6 +42,7 @@ public class ParabankTest {
         parabankLoginTest.writeintouserfield();
         parabankLoginTest.writeintopasswordfield();
         parabankLoginTest.pressloginbutton();
+        parabankLoginTest.navigatetoopennewaccount();
         Thread.sleep(5000);
         // parabankLoginTest.checkloginresult();
         }
@@ -65,11 +66,11 @@ public class ParabankTest {
     public void openNewAccountInParabank() throws InterruptedException {
         loginToParabank();
         ParabankOpenNewAccount parabankOpenNewAccount = (ParabankOpenNewAccount) SiteFactory.Create("ParabankOpenNewAccount", driver);
-        parabankOpenNewAccount.clicklink();
-        parabankOpenNewAccount.checklink();
+        // parabankOpenNewAccount.navigate();
+        // parabankOpenNewAccount.checklink();
         parabankOpenNewAccount.clickdropdownlist();
-        parabankOpenNewAccount.clickonopennewaccountbutton();
         parabankOpenNewAccount.selectfromdropdownlist();
+        parabankOpenNewAccount.clickonopennewaccountbutton();
     }
     @AfterEach
     @Epic("Parabank")
