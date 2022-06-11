@@ -42,7 +42,8 @@ public class ParabankTest {
         parabankLoginTest.writeintouserfield();
         parabankLoginTest.writeintopasswordfield();
         parabankLoginTest.pressloginbutton();
-        parabankLoginTest.navigatetoopennewaccount();
+        // parabankLoginTest.navigatetoopennewaccount(); Innen tudok csak a helyes oldalra navigálni valamiért
+        parabankLoginTest.navigatetotransferfund();
         Thread.sleep(5000);
         // parabankLoginTest.checkloginresult();
         }
@@ -71,6 +72,22 @@ public class ParabankTest {
         parabankOpenNewAccount.clickdropdownlist();
         parabankOpenNewAccount.selectfromdropdownlist();
         parabankOpenNewAccount.clickonopennewaccountbutton();
+    }
+
+    @Test
+    @Epic("Parabank")
+    @Story("Transfer fund at Parabank")
+    @Description("Navigation to the transfer page and create a new account")
+    @Severity(SeverityLevel.CRITICAL)
+    public void transferFundInParabank() throws InterruptedException {
+        loginToParabank();
+        ParabankTransferFund parabankTransferFund = (ParabankTransferFund) SiteFactory.Create("ParabankTransferFund", driver);
+        // parabankOpenNewAccount.navigate();
+        // parabankOpenNewAccount.checklink();
+        parabankTransferFund.writeintoamountfield();
+        parabankTransferFund.clickfirstdropdownlist();
+        parabankTransferFund.selectfromfirstdropdownlist();
+        parabankTransferFund.clickontransferbutton();
     }
     @AfterEach
     @Epic("Parabank")

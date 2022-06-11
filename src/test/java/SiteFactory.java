@@ -13,6 +13,8 @@ public class SiteFactory {
                 return new ParabankTotalAmountTest(driver);
             case "ParabankOpenNewAccount":
                 return new ParabankOpenNewAccount(driver);
+            case "ParabankTransferFund":
+                return new ParabankTransferFund(driver);
             default:
                 return null;
         }

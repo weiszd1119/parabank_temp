@@ -28,7 +28,7 @@ public class ParabankOpenNewAccount extends StartDriver {
 
     public void selectfromdropdownlist() {
         Select itemSelect = new Select(driver.findElement(findDropdownList));
-        itemSelect.selectByVisibleText("SAVINGS");
+        itemSelect.selectByIndex(1);
     }
 
     public void clickonopennewaccountbutton() {
